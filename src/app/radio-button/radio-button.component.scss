@@ -1,0 +1,66 @@
+.container {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #595959;
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    &:checked {
+      ~ .checkmark {
+        background-color:white ;
+        &:after {
+          display: block;
+        }
+      }
+    }
+  }
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid #1890FF;
+    &:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+    &:after {
+      top: 4px;
+     left: 4px;
+     width: 8px;
+     height: 8px;
+     border-radius: 50%;
+     background: #1890FF;
+   }
+
+  }
+  &:hover {
+    input {
+      ~ .checkmark {
+        border: 1px solid #1890FF;
+      }
+    }
+  }
+  &:disabled{
+    color: #BFBFBF;
+  }
+}
+.hidden {
+  display: none;
+}
+.visibility {
+  display: block;
+}

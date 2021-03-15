@@ -1,0 +1,5 @@
+<div class="time">
+  <label *ngIf="label">{{ labelText }}</label>
+  <input [ngClass]="classes" type="time" placeholder="Select Time: " />
+  <p *ngIf="message">{{messageText}}</p>
+</div>

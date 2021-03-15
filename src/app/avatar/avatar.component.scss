@@ -1,0 +1,80 @@
+.avatar {
+  position: relative;
+  display: inline-block;
+  img {
+    &.ellipse {
+      border-radius: 50%;
+    }
+  }
+  p{
+    font-size: 14px;
+    color: #FFFFFF;
+    background: #D9D9D9;
+    text-align: center;
+    &.ellipse {
+      border-radius: 50%;
+    }
+    &.custom {
+      padding: 25px;
+    }
+    &.large {
+      padding: 20px;
+    }
+    &.medium {
+      padding: 15px;
+    }
+    &.small {
+      padding: 10px;
+      font-size: 12px;
+    }
+    &.mini {
+      padding: 5px;
+      font-size: 7px;
+    }
+  }
+  .status {
+    border-radius: 50%;
+    position: absolute;
+    top: 2%;
+    right: 0%;
+    border: 3px solid #fff;
+    &.check {
+      background: #389e0d;
+      padding: 1px 2px;
+    }
+    &.close {
+      background: #f5222d;
+      padding: 0px 4px 1px;
+    }
+    &.more {
+      background: #bfbfbf;
+      padding: 0px 3px;
+      svg {
+        margin: 3px auto;
+      }
+    }
+  }
+  .presence {
+    padding: 6px;
+    border-radius: 50%;
+    background: #389e0d;
+    border: 3px solid white;
+    position: absolute;
+    &.ellipseImage {
+      bottom: 8%;
+      right: 3%;
+    }
+    &.squareImage {
+      bottom: 3%;
+      right: -5%;
+    }
+    &.ellipseText {
+      bottom: 12%;
+      right: 3%;
+    }
+    &.squareText {
+      bottom: 9%;
+      right: -8%;
+    }
+  }
+}

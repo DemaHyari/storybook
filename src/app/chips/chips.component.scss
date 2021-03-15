@@ -1,0 +1,147 @@
+.chip {
+  margin: 0px 4px;
+  display: inline-block;
+  border-radius: 4px;
+  &.default {
+    color: #595959;
+    background: #f5f5f5;
+    &.selected {
+      background: #595959;
+      color: #ffffff;
+    }
+    &.outline {
+      box-shadow: inset 1px 0px 0px #d9d9d9, inset 0px 1px 0px #d9d9d9,
+        inset -1px 0px 0px #d9d9d9, inset 0px -1px 0px #d9d9d9;
+    }
+    .counter{
+      background-color: #8C8C8C;
+    }
+    &.disabled{
+      background: #F5F5F5;
+      color: #BFBFBF;
+    }
+  }
+  &.primary {
+    color: #1890ff;
+    background: #e6f7ff;
+    &.selected {
+      background: #595959;
+      color: #ffffff;
+    }
+    &.outline {
+      box-shadow: inset 1px 0px 0px #91d5ff, inset 0px 1px 0px #91d5ff,
+        inset -1px 0px 0px #91d5ff, inset 0px -1px 0px #91d5ff;
+    }
+    .counter{
+      background-color: #40A9FF;
+    }
+    &.disabled{
+      background: #E6F7FF;
+      color: #91D5FF;
+      svg{
+        margin: -2px 4px;
+      }
+    }
+  }
+  &.positive {
+    color: #52c41a;
+    background: #d9f7be;
+    &.selected {
+      background: #52c41a;
+      color: #ffffff;
+    }
+    &.outline {
+      box-shadow: inset 1px 0px 0px #b7eb8f, inset 0px 1px 0px #b7eb8f,
+        inset -1px 0px 0px #b7eb8f, inset 0px -1px 0px #b7eb8f;
+    }
+    &.disabled{
+      background: #D9F7BE;
+      color: #B7EB8F;
+    }
+    .counter{
+      background-color: #73D13D;
+    }
+  }
+  &.warning {
+    color: #fa8c16;
+    background: #fefee6;
+    &.selected {
+      background: #fa8c16;
+      color: #ffffff;
+    }
+    &.outline {
+      box-shadow: inset 1px 0px 0px #fff08f, inset 0px 1px 0px #fff08f,
+        inset -1px 0px 0px #fff08f, inset 0px -1px 0px #fff08f;
+    }
+    &.disabled{
+      background: #FEFEE6;
+      color: #FFD591;
+    }
+    .counter{
+      background-color: #FFA940;
+    }
+  }
+  &.error {
+    color: #f5222d;
+    background: #fff1f0;
+    &.selected {
+      background: #F5222D;
+      color: #ffffff;
+    }
+    &.outline {
+      box-shadow: inset 1px 0px 0px #ffa39e, inset 0px 1px 0px #ffa39e,
+        inset -1px 0px 0px #ffa39e, inset 0px -1px 0px #ffa39e;
+    }
+    &.disabled{
+      background: #FFF1F0;
+      color: #FFA39E;
+    }
+    .counter{
+      background-color: #FF4D4F;
+    }
+  }
+
+  &.rounded {
+    border-radius: 100px;
+    img{
+      border-radius: 50%;
+    }
+  }
+  &.outline {
+    border-radius: 100px;
+  }
+  &.small {
+    padding: 3px 6px;
+    font-size: 12px;
+    .counter{
+      font-size: 8px;
+      padding: 1px 2px ;
+      margin: 0px 2px 0px 0px;
+      border-radius: 100px;
+      color: #fff;
+    }
+  }
+  &.large {
+    padding: 6px 12px;
+    font-size: 16px;
+    .counter{
+      font-size: 12px;
+      padding: 1px 3px ;
+      margin: 0px 4px 0px 0px;
+      border-radius: 100px;
+      color: #fff;
+    }
+    img{
+      margin: -3px 4px;
+    }
+  }
+  svg{
+    margin: -3px 4px;
+  }
+  img{
+    margin: 0 4px;
+  }
+  .remove{
+    cursor: pointer;
+  }
+}

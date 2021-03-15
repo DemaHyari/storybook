@@ -1,0 +1,31 @@
+.counter{
+  border-radius: 200px;
+  &.primary{
+    background: #0050B3;
+    color: #FFFFFF;
+  }
+  &.primaryInverted{
+    background: #FAFAFA;
+    color: #0050B3;
+  }
+  &.important{
+    background: #CF1322;
+    color: #FFFFFF;
+  }
+  &.added{
+    background: #E6F7FF;
+    color: #0050B3;
+  }
+  &.removed{
+    background: #FFF1F0;
+    color: #A8071A;
+  }
+  &.large{
+    padding: 3px 7px;
+    font-size: 14px;
+  }
+  &.small{
+    padding: 0px 5px;
+    font-size: 12px;
+  }
+}

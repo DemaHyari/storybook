@@ -1,0 +1,6 @@
+<div class="date">
+  <label *ngIf="label">{{ labelText }}</label>
+  <input [ngClass]="classes" type="date" placeholder="Select Date:  " />
+  <p *ngIf="message">{{messageText}}</p>
+</div>
+

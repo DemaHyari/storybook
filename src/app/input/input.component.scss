@@ -1,0 +1,75 @@
+.form-control {
+  position: relative;
+  label {
+    display: block;
+    font-size: 14px;
+    color: #262626;
+    margin: 4px 2px;
+  }
+  input {
+    background: #ffffff;
+    box-shadow: inset 1px 0px 0px #d9d9d9, inset 0px 1px 0px #d9d9d9,
+      inset -1px 0px 0px #d9d9d9, inset 0px -1px 0px #d9d9d9;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    text-align: center;
+    &.large {
+      padding: 12px 16px;
+      ::placeholder {
+        font-size: 16px;
+      }
+    }
+    &.medium {
+      padding: 8px 12px;
+      ::placeholder {
+        font-size: 14px;
+      }
+    }
+    &.small {
+      padding: 5px 8px;
+      ::placeholder {
+        font-size: 12px;
+      }
+    }
+    &:hover {
+      box-shadow: inset 1px 0px 0px #40a9ff, inset 0px 1px 0px #40a9ff,
+        inset -1px 0px 0px #40a9ff, inset 0px -1px 0px #40a9ff;
+    }
+    &:focus {
+      box-shadow: -1px -1px 3px rgba(64, 169, 255, 0.25),
+        1px 1px 3px rgba(64, 169, 255, 0.25), inset 1px 0px 0px #40a9ff,
+        inset 0px 1px 0px #40a9ff, inset -1px 0px 0px #40a9ff,
+        inset 0px -1px 0px #40a9ff;
+    }
+    &:active {
+      box-shadow: -1px -1px 3px rgba(64, 169, 255, 0.25),
+        1px 1px 3px rgba(64, 169, 255, 0.25), inset 1px 0px 0px #40a9ff,
+        inset 0px 1px 0px #40a9ff, inset -1px 0px 0px #40a9ff,
+        inset 0px -1px 0px #40a9ff;
+    }
+    &:invalid {
+      box-shadow: inset 1px 0px 0px #f5222d, inset 0px 1px 0px #f5222d,
+        inset -1px 0px 0px #f5222d, inset 0px -1px 0px #f5222d;
+    }
+    ::placeholder {
+      color: #bfbfbf;
+    }
+  }
+  .rightIcon,
+  .leftIcon {
+    position: absolute;
+    margin: 6px 5px;
+  }
+  .rightIcon {
+    margin: 6px -22px;
+  }
+  .message{
+    color: #8C8C8C;
+    font-size: 14px;
+    margin: 2px;
+    &:invalid {
+      color: #f5222d;
+    }
+  }
+}

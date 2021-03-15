@@ -1,0 +1,25 @@
+.rating {
+  input{
+    display: none;
+    &:hover + label,
+    &:checked + label{
+      filter: grayscale(0);
+      opacity: 1;
+      width: 160px;
+    }
+  }
+  label{
+    position: relative;
+    margin: 2px;
+    width: 0;
+    height: 128px;
+    cursor: pointer;
+    transition: 0.5s;
+    filter: grayscale(1);
+  }
+  &:hover{
+    label{
+      width: 160px;
+    }
+  }
+}

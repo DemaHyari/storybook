@@ -1,0 +1,38 @@
+<section class="paginators">
+  <div class="paginator">
+      <span class="lead">Show</span>
+      <ul>
+        <li [ngClass]="classes">{{label}}</li>
+        <li>{{label}}</li>
+        <li>{{label}}</li>
+      </ul>
+      <span class="lead">Items Per Page</span>
+  </div>
+  <div class="paginator paginatorIcons">
+    <div class="icon">
+      <svg width="13" height="12" viewBox="0 0 13 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12.41 10.59L7.82 6L12.41 1.41L11 0L5 6L11 12L12.41 10.59ZM0 0H2V12H0V0Z" />
+      </svg>
+    </div>
+    <div class="icon">
+      <svg width="8" height="12" viewBox="0 0 8 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path d="M7.41 1.41L6 0L0 6L6 12L7.41 10.59L2.83 6L7.41 1.41Z" />
+      </svg>
+    </div>
+    <p>
+      ( <span>Range Start</span> ) -
+      ( <span>Range End</span> ) of
+      ( <span>Total Items</span> )
+    </p>
+    <div class="icon">
+      <svg width="8" height="12" viewBox="0 0 8 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1.99984 0L0.589844 1.41L5.16984 6L0.589844 10.59L1.99984 12L7.99984 6L1.99984 0Z" />
+      </svg>
+    </div>
+    <div class="icon">
+      <svg width="13" height="12" viewBox="0 0 13 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.589844 1.41L5.17984 6L0.589844 10.59L1.99984 12L7.99984 6L1.99984 0L0.589844 1.41ZM10.9998 0H12.9998V12H10.9998V0Z" />
+      </svg>
+    </div>
+  </div>
+</section>

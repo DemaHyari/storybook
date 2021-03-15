@@ -1,0 +1,32 @@
+ul {
+  list-style: none;
+  li {
+    margin: 10px 5px;
+    padding: 7px 0px;
+    a {
+      color: #595959;
+      font-size: 20px;
+      text-decoration: none;
+      background-color: transparent;
+      padding: 8px 20px;
+      border-radius: 4px;
+      &:hover {
+        background: #fafafa;
+      }
+      &.active {
+        background-color: #e6f7ff;
+        color: #096dd9;
+        border-left: 2px solid #096dd9;
+      }
+      svg{
+        margin: 0 10px;
+      }
+    }
+  }
+}
+.hidden {
+  display: none;
+}
+.visibility {
+  display: inline-block;
+}

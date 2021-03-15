@@ -1,0 +1,21 @@
+<a href="" *ngIf="primary" [ngClass]="Classes">
+  <svg *ngIf="icon" width="20" height="17" viewBox="0 0 20 17" fill="currentColor"
+    xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M10.0007 3.21583L14.584 7.34083V14.5H12.7507V9H7.25065V14.5H5.41732V7.34083L10.0007 3.21583ZM10.0007 0.75L0.833984 9H3.58398V16.3333H9.08398V10.8333H10.9173V16.3333H16.4173V9H19.1673L10.0007 0.75Z" />
+  </svg>
+  <span *ngIf="link">{{ label }}</span>
+</a>
+<div *ngIf="dropdown" [ngClass]="Classes" class="dropdown">
+  <a type="button">
+    <span>{{label}}</span>
+    <svg width="10" height="7" viewBox="0 0 10 7" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path d="M8.825 0.158203L5 3.97487L1.175 0.158203L0 1.3332L5 6.3332L10 1.3332L8.825 0.158203Z"/>
+    </svg>
+  </a>
+  <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>

@@ -1,0 +1,275 @@
+.dropdown {
+  position: relative;
+  display: inline-block;
+  .button {
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    margin: 0 5px;
+    font-size: 18px;
+    box-shadow: 0px 2px 4px #bae7ff, 0px 4px 8px #e6f7ff;
+
+    svg{
+      margin-left: 8px;
+    }
+    &.button-small {
+      padding: 5px 5px;
+      border-radius: 4px;
+      border-radius: 4px;
+    }
+    &.button-medium {
+      padding: 8px 12px;
+      border-radius: 8px;
+    }
+    &.button-large {
+      padding: 12px 16px;
+      border-radius: 12px;
+    }
+    &.danger-button {
+      color: white;
+      background-color: #f5222d;
+      &:hover {
+        background-color: #ff4d4f;
+        border: 1px solid #ff4d4f;
+      }
+      &:focus {
+        background-color: #ff7875;
+        border: 1px solid #ff7875;
+      }
+      &:active {
+        background-color: #40a9ff;
+        border: 1px solid #40a9ff;
+      }
+      &:disabled {
+        color: #bfbfbf;
+        background-color: #f5f5f5;
+        border: 1px solid #d9d9d9;
+      }
+      span{
+        padding-right: 8px;
+        border-right: 1px solid #fff;
+      }
+    }
+    &.primary-button {
+      color: white;
+      background-color: #1890ff;
+      &:hover {
+        background-color: #40a9ff;
+        border: 1px solid #40a9ff;
+      }
+      &:focus {
+        background-color: #69c0ff;
+        border: 1px solid #69c0ff;
+      }
+      &:active {
+        background-color: #69c0ff;
+        border: 1px solid #69c0ff;
+      }
+      &:disabled {
+        color: #bfbfbf;
+        background-color: #f5f5f5;
+        border: 1px solid #d9d9d9;
+      }
+      span{
+        padding-right: 8px;
+        border-right: 1px solid #fff;
+      }
+    }
+    &.outline-button {
+      color: #595959;
+      background-color: transparent;
+      border: 1px solid #595959;
+      &:hover {
+        color: #40a9ff;
+        border: 1px solid #40a9ff;
+        span{
+          padding-right: 8px;
+          border-right: 1px solid #40a9ff;
+        }
+      }
+      &:focus {
+        color: #69c0ff;
+        border: 1px solid #69c0ff;
+        span{
+          padding-right: 8px;
+          border-right: 1px solid #69c0ff;
+        }
+      }
+      &:active {
+        color: #69c0ff;
+        border: 1px solid #69c0ff;
+        span{
+          padding-right: 8px;
+          border-right: 1px solid #69c0ff;
+        }
+      }
+      &:disabled {
+        color: #bfbfbf;
+        background-color: #f5f5f5;
+        border: 1px solid #d9d9d9;
+        span{
+          padding-right: 8px;
+          border-right: 1px solid #bfbfbf;
+        }
+      }
+      span{
+        padding-right: 8px;
+        border-right: 1px solid #595959;
+      }
+    }
+    &.dashed-button {
+      color: #595959;
+      background-color: transparent;
+      border: 1px dashed #595959;
+      span{
+        padding-right: 8px;
+        border-right: 1px solid #595959;
+      }
+      &:hover {
+        color: #40a9ff;
+        border: 1px dashed #40a9ff;
+        span{
+          padding-right: 8px;
+          border-right: 1px solid #40a9ff;
+        }
+      }
+      &:focus {
+        color: #69c0ff;
+        border: 1px dashed #69c0ff;
+        span{
+          padding-right: 8px;
+          border-right: 1px solid #69c0ff;
+        }
+      }
+      &:active {
+        color: #69c0ff;
+        border: 1px dashed #69c0ff;
+        span{
+          padding-right: 8px;
+          border-right: 1px solid #69c0ff;
+        }
+      }
+      &:disabled {
+        color: #bfbfbf;
+        background-color: #f5f5f5;
+        border: 1px dashed #d9d9d9;
+        span{
+          padding-right: 8px;
+          border-right: 1px solid #bfbfbf;
+        }
+      }
+    }
+    &.primaryOutline-button {
+      color: #1890ff;
+      background-color: transparent;
+      border: 1px solid #1890ff;
+      span{
+        padding-right: 8px;
+        border-right: 1px solid #1890ff;
+      }
+      &:hover {
+        color: #40a9ff;
+        background-color: transparent;
+        border: 1px solid #40a9ff;
+        span{
+          padding-right: 8px;
+          border-right: 1px solid #40a9ff;
+        }
+      }
+      &:focus {
+        color: #69c0ff;
+        background-color: transparent;
+        border: 1px solid #69c0ff;
+        span{
+          padding-right: 8px;
+          border-right: 1px solid #69c0ff;
+        }
+      }
+      &:active {
+        color: #69c0ff;
+        background-color: transparent;
+        border: 1px solid #69c0ff;
+        span{
+          padding-right: 8px;
+          border-right: 1px solid #69c0ff;
+        }
+      }
+      &:disabled {
+        color: #bfbfbf;
+        background-color: transparent;
+        border: 1px solid #d9d9d9;
+        span{
+          padding-right: 8px;
+          border-right: 1px solid #bfbfbf;
+        }
+      }
+    }
+    &.dangerOutline-button {
+      color: #f5222d;
+      background-color: transparent;
+      border: 1px solid #f5222d;
+      span{
+        padding-right: 8px;
+        border-right: 1px solid #f5222d;
+      }
+      &:hover {
+        color: #ff4d4f;
+        background-color: transparent;
+        border: 1px solid #ff4d4f;
+        span{
+          padding-right: 8px;
+          border-right: 1px solid #ff4d4f;
+        }
+      }
+      &:focus {
+        color: #ff7875;
+        background-color: transparent;
+        border: 1px solid #ff7875;
+        span{
+          padding-right: 8px;
+          border-right: 1px solid #ff7875;
+        }
+      }
+      &:active {
+        color: #cf1322;
+        background-color: transparent;
+        border: 1px solid #cf1322;
+        span{
+          padding-right: 8px;
+          border-right: 1px solid #cf1322;
+        }
+      }
+      &:disabled {
+        color: #bfbfbf;
+        background-color: transparent;
+        border: 1px solid #d9d9d9;
+        span{
+          padding-right: 8px;
+          border-right: 1px solid #bfbfbf;
+        }
+      }
+    }
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      &:hover {
+        background-color: #f1f1f1;
+      }
+    }
+  }
+  &:hover {
+    .dropdown-content {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.badges{
+  margin: 10px 0px;
+  border-radius: 100px;
+  color: #FFFFFF;
+  text-align: center;
+  &.proccess{
+    background: #1890FF;
+  }
+  &.success{
+    background: #52C41A;
+  }
+  &.warning{
+    background: #FA8C16;
+  }
+  &.error{
+    background: #F5222D;
+  }
+  &.disabled{
+    background: #F5F5F5;
+    color: #BFBFBF;
+  }
+  &.small{
+    padding: 4px 6px ;
+    font-size: 14px;
+  }
+  &.large{
+    padding: 6px 8px;
+    font-size: 16px;
+  }svg{
+    margin: -3px 2px;
+  }
+}

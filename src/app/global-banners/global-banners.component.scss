@@ -1,0 +1,23 @@
+.banner {
+  font-size: 18px;
+  color: #FFFFFF;
+  background: #BFBFBF;
+  margin: 0px 8px;
+  text-align: center;
+  padding: 20px;
+  &.success{
+    background: #52C41A;
+  }
+  &.info{
+    background: #1890FF;
+  }
+  &.warning{
+    background: #FAAD14;
+  }
+  &.error{
+    background: #F5222D;
+  }
+  svg{
+    margin: -3px 5px;
+  }
+}
